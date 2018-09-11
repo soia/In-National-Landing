@@ -21,15 +21,17 @@
             align-items: center; }
     .header-bar_mobile {
       display: none; }
-  .header-logo__container {
-    width: 10.2vw;
-    height: 3vw;
-    -webkit-animation: logoStartAnimation 0.8s 1 0s linear;
-            animation: logoStartAnimation 0.8s 1 0s linear; }
-  .header-logo__img {
-    display: block;
-    width: 100%;
-    height: 100%; }
+  .header-logo {
+    width: 100%; }
+    .header-logo__container {
+      width: 10.2vw;
+      height: 3vw;
+      -webkit-animation: logoStartAnimation 0.8s 1 0s linear;
+              animation: logoStartAnimation 0.8s 1 0s linear; }
+    .header-logo__img {
+      display: block;
+      width: 100%;
+      height: 100%; }
 
 @-webkit-keyframes logoStartAnimation {
   0% {
