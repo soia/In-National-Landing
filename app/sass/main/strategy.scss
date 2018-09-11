@@ -1,0 +1,87 @@
+.strategy {
+  position: relative;
+  color: #fff;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__container {
+    z-index: 2;
+    padding-top: 7.4vw;
+    padding-bottom: 6vw;
+  }
+
+  &__title {
+    color: #fff;
+    width: 56vw;
+    margin: 0 auto;
+    line-height: 2.7vw;
+    text-align: center;
+  }
+
+  &__content {
+    padding-top: 10.8vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 1023px) { 
+      padding-top: 2.8vw;
+    }
+  }
+
+  &__item {
+    width: 19.5vw;
+    padding-bottom: 6vw;
+  }
+
+  &__number {
+    font-size: 1.3vw;
+    padding-bottom: 0.5vw;
+  }
+
+  &__head {
+    padding-left: 1.1vw;
+    font-size: 3vw;
+    padding-bottom: 2.4vw;
+  }
+
+  &__text {
+    padding-left: 1.1vw;
+    line-height: 2.2vw;
+  }
+
+  &-more {
+    padding-top: 5.7vw;
+    width: 24.2vw;
+    margin: 0 auto;
+
+    &__title {
+      font-size: 1.3vw;
+      letter-spacing: 0.05vw;
+      padding-bottom: 3.6vw;
+    }
+
+    &__link {
+      width: 11.8vw;
+      margin: 0 auto;
+      height: 3.5vw;
+      border-radius: 2vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.33);
+      font-size: 1.1vw;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}

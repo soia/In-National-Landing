@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  .modal__wrapper {
+    width: 100vw;
+    height: 100vh;
+    max-height: initial; }
+  .modal__container {
+    width: 100%;
+    height: 100%;
+    padding: 0; }
+  .modal__btn-close {
+    top: 4vh;
+    right: 4vw;
+    height: 2vw; }
+    .modal__btn-close svg {
+      width: 5vw;
+      height: 5vw; }
+  .modal__title {
+    padding: 3vh 10vw 3vh 4vw;
+    background: #979797;
+    color: #fff; }
+  .modal__text {
+    padding: 2vh 4vw; }
+  .modal__input {
+    padding: 0 4vw; } }

@@ -1,0 +1,108 @@
+.requirements {
+  &__container {
+    padding-top: 20.7vw;
+    padding-bottom: 5.8vw;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__content {
+    overflow: hidden;
+    display: flex;
+    padding: 8vw 10.3vw 0;
+    padding-right: 12.2vw;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    width: auto;
+
+    &_1 {
+      left: 24vw;
+      height: 95vw;
+    }
+
+    &_2 {
+      left: 15.8vw;
+      height: 91vw;
+    }
+
+    &_3 {
+      left: 6vw;
+      height: 93vw;
+    }
+  }
+
+  &-item {
+    color: #fff;
+    padding: 3.2vw 2.8vw;
+    width: 25.7vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.6vw;
+    margin-bottom: 5.4vw;
+
+    &:nth-child(4) {
+      background: linear-gradient(54.82deg, #8E03E8 -15.22%, #0E2DCE 108.01%);
+    }
+
+    &:nth-child(5) {
+      background: linear-gradient(54.82deg, #5F009D -15.22%, #AC00D2 108.01%);
+    }
+
+    &:nth-child(6) {
+      background: linear-gradient(311.84deg, #0900FF -37.41%, #EF0B6F 102.38%);
+      z-index: 10;
+    }
+
+    &:nth-child(7) {
+      background: linear-gradient(302.07deg, #0B009D -30.1%, #7C00D2 98.02%);
+    }
+
+    &__title {
+      font-size: 1.7vw;
+      padding-bottom: 4vw;
+
+      &_lg {
+        padding-bottom: 2.6vw;
+      }
+    }
+
+    &__subtitle {
+      font-size: 2.1vw;
+      padding-bottom: 2vw;
+    }
+
+    &__plus {
+      font-size: 2.6vw;
+      padding-bottom: 2vw;
+    }
+
+    &__text {
+      width: 80%;
+      text-align: center;
+      padding-bottom: 3.7vw;
+    }
+
+    &__btn {
+      width: 10.4vw;
+      height: 3.2vw;
+      background-color: #fff;
+      color: #4F17DB;
+      border-radius: 2vw;
+      transition: background-color 0.3s;
+      &:hover {
+        transition: background-color 0.3s;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}

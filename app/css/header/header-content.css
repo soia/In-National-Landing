@@ -1,0 +1,33 @@
+.header-content {
+  color: #fff;
+  padding-top: 10.9vw;
+  width: 60vw; }
+  .header-content__title {
+    font-weight: normal;
+    font-size: 4.6vw; }
+  .header-content__subtitle {
+    font-size: 1.9vw;
+    padding-top: 1vw;
+    line-height: 2.2vw; }
+  .header-content__text {
+    padding-top: 3.2vw;
+    font-style: italic;
+    line-height: 1.4vw;
+    font-size: 1vw;
+    font-weight: 300;
+    padding-bottom: 2.5vw; }
+  .header-content__btn {
+    width: 13.4vw;
+    height: 3.6vw;
+    font-size: 1vw;
+    -webkit-border-radius: 1.7vw;
+            border-radius: 1.7vw;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    background-color: rgba(191, 191, 191, 0.11); }
+    .header-content__btn:hover {
+      -webkit-transition: background-color 0.3s;
+      -o-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+      background-color: rgba(191, 191, 191, 0.31); }

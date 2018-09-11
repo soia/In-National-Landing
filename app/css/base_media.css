@@ -1,0 +1,5 @@
+@media screen and (max-width: 768px) {
+  .main-input__input {
+    padding: 2.2vh 0; }
+  .main-input__warn {
+    padding: 1vh; } }

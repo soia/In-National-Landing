@@ -1,0 +1,32 @@
+/* ----- base styles ---- */
+
+
+@import "fonts";
+@import "base";
+
+/* ---- libs ----- */
+
+@import "hamburgerBtn";
+@import "modal";
+
+/* ---- main styles ----- */
+
+@import 'header/header-bar';
+@import 'header/header-content';
+@import "main/directions";
+@import "main/requirements";
+@import "main/strategy";
+@import "main/contact-form.scss";
+@import "footer";
+
+/* ---- landing ----- */
+
+
+
+/* ---- personal cabinet ----- */
+
+
+
+//@import "media"
+
+@import "media";

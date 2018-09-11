@@ -1,0 +1,255 @@
+.header {
+  background: url("../../img/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 17vw;
+
+
+  &-bar {                 // header bar (container)
+    display: flex;
+    padding-top: 4vw;
+    justify-content: space-between;
+    align-items: center;
+
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &-logo {                // header logo
+
+    &__container {
+      width: 10.2vw;
+      height: 3vw;
+      animation: logoStartAnimation 0.8s 1 0s linear;
+    }
+
+    &__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @keyframes logoStartAnimation{
+    0%{
+      transform: rotate(0) translateX(-100%);
+      opacity: 0;
+    }
+    75%{
+      transform: translateX(0%);
+      opacity: 0.75;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  &-nav {                  // header navigation
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: navStartAnimation 0.7s 1 0s linear;
+    }
+
+    &__item {
+      padding-right: 1vw;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &__link {
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        color: red;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @keyframes navStartAnimation{
+    0%{
+      transform: translateY(150%);
+      opacity: 0;
+    }
+    75%{
+      transform: translateY(0);
+      opacity: 0.75;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &-cabinet {               // header user cabinet
+
+    &__container {
+      display: flex;
+      align-items: center;
+      animation: cabinetStartAnimation 0.8s 1 0s linear;
+    }
+
+    &__btn {
+      font-size: 1.4vw;
+      font-weight: normal;
+      width: initial;
+      height: 4.5vw;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin: 0 auto;
+        height: 0.2vw;
+        background-color: #fff;
+        transform: scale(0);
+        transition: transform 0.15s;
+      }
+
+      &:hover {
+        &:after {
+          transition: transform 0.15s;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  @keyframes cabinetStartAnimation{
+    0%{
+      transform: rotate(0) translateX(100%);
+      opacity: 0;
+    }
+    75%{
+      transform: translateX(0);
+      opacity: 0.75;
+    }
+    100%{
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  &-notify {                // header notifications (user cabinet)
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    transition: all 0.4s;
+
+    &__list {
+      display: none;
+      position: absolute;
+      bottom: -1vw;
+      z-index: 2;
+      transform: translateY(100%);
+      background: red;
+
+      &.dropdown-visible {
+        display: block;
+      }
+    }
+
+    &__img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: #fff;
+      cursor: pointer;
+      transition: all 0.4s;
+    }
+
+    &__check {
+      position: absolute;
+      cursor: pointer;
+      width: 40%;
+      height: 40%;
+      right: 0;
+      border-radius: 50%;
+      background: green;
+    }
+
+    &:hover {
+      & .header-notify__img {
+        fill: red;
+      }
+    }
+  }
+
+  &-user {                    // header username (user cabinet)
+
+    padding: 0 2vw;
+    position: relative;
+
+
+    &__btn {
+      background: transparent;
+      color: #ffffff;
+      transition: all 0.3s;
+
+      &:hover {
+        color: yellow;
+      }
+
+      &:focus {
+        color: red;
+        transform: scale(1.01);
+      }
+    }
+
+    &__list {
+      display: none;
+      position: absolute;
+      bottom: -1vw;
+      z-index: 2;
+      left: 50%;
+      transform: translate(-50%, 120%);
+      background: red;
+
+      &.dropdown-visible {
+        display: block;
+      }
+    }
+  }
+
+  &-user-logo {                 // header user logo (user cabinet)
+
+    &__btn {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      cursor: pointer;
+      width: 2.5vw;
+      height: 2.5vw;
+      background: green;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      transition: all 0.3s;
+
+      &:hover {
+        background: darken(green, 5%);
+      }
+    }
+  }
+
+  &__sign-in {
+    padding-right: 8.6vw;
+  }
+
+}

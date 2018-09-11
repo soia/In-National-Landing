@@ -1,0 +1,110 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: none; }
+  .modal.is-active {
+    display: block; }
+  .modal__bg {
+    background-color: rgba(68, 68, 68, 0.71);
+    width: 100%;
+    height: 100%; }
+  .modal__wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    min-width: 35vw;
+    max-height: 80vh;
+    overflow-y: scroll; }
+  .modal__container {
+    padding: 3vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: #fff;
+    -webkit-animation: modalRenderAnimation 0.1s 1 0s linear;
+            animation: modalRenderAnimation 0.1s 1 0s linear;
+    -webkit-border-radius: 0.5vw;
+            border-radius: 0.5vw; }
+
+@-webkit-keyframes modalRenderAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes modalRenderAnimation {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .modal__multiple-btns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .modal__btn-close {
+    position: absolute;
+    top: 0.8vw;
+    right: 0.8vw;
+    padding: 0.3vw;
+    cursor: pointer; }
+    .modal__btn-close svg {
+      fill: #626262;
+      -webkit-transition: fill 0.35s;
+      -o-transition: fill 0.35s;
+      transition: fill 0.35s;
+      width: 1vw;
+      height: 1vw; }
+    .modal__btn-close:hover svg {
+      fill: #000000;
+      -webkit-transition: fill 0.35s;
+      -o-transition: fill 0.35s;
+      transition: fill 0.35s; }
+  .modal__title {
+    font-size: 1.8rem;
+    padding-bottom: 2vw; }
+  .modal__text {
+    font-size: 1.2rem;
+    padding-bottom: 2vw; }
+  .modal__input {
+    padding-bottom: 1vw; }
+  .modal__submit-btn {
+    margin-top: 1vw;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    background: -webkit-linear-gradient(102.94deg, #6E2E77 -10.26%, #05002A 151.66%);
+    background: -o-linear-gradient(102.94deg, #6E2E77 -10.26%, #05002A 151.66%);
+    background: linear-gradient(347.06deg, #6E2E77 -10.26%, #05002A 151.66%);
+    -webkit-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+    -webkit-border-radius: 2vw;
+            border-radius: 2vw; }
+    .modal__submit-btn:hover {
+      -webkit-transition: background 0.3s;
+      -o-transition: background 0.3s;
+      transition: background 0.3s;
+      background: -webkit-linear-gradient(102.94deg, rgba(110, 46, 119, 0.9) -10.26%, rgba(5, 0, 42, 0.9) 151.66%);
+      background: -o-linear-gradient(102.94deg, rgba(110, 46, 119, 0.9) -10.26%, rgba(5, 0, 42, 0.9) 151.66%);
+      background: linear-gradient(347.06deg, rgba(110, 46, 119, 0.9) -10.26%, rgba(5, 0, 42, 0.9) 151.66%); }

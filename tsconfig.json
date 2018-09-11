@@ -1,0 +1,13 @@
+{
+  "files": [
+    "app/ts/customDropdown.ts",
+    "app/ts/mobileNav.ts",
+    "app/ts/customModal.ts",
+    "app/ts/signOut.ts",
+    "app/ts/test.ts"
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es2017"
+  }
+}

@@ -1,0 +1,67 @@
+.directions {
+  padding-top: 11.7vw; }
+  .directions__container {
+    position: relative; }
+  .directions__bg {
+    position: absolute;
+    top: -5.5vw;
+    right: 5.7vw;
+    width: 44.1vw;
+    height: auto; }
+  .directions__content {
+    width: 37vw; }
+  .directions__title {
+    font-size: 3.3vw; }
+  .directions__text {
+    padding-top: 3.7vw;
+    color: #4A4A4A;
+    line-height: 2.1vw; }
+  .directions-links {
+    padding-top: 10.6vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .directions-links__item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 30vw; }
+      .directions-links__item:first-child {
+        width: 20vw;
+        margin-right: 7.2vw; }
+    .directions-links__element {
+      margin-top: 1.8vw;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 9.3vw;
+      height: 2.8vw;
+      background-color: rgba(216, 216, 216, 0.41);
+      font-size: 1.1vw;
+      -webkit-border-radius: 1.8vw;
+              border-radius: 1.8vw; }
+      .directions-links__element:hover {
+        background-color: rgba(205, 205, 205, 0.71);
+        -webkit-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        transition: background-color 0.3s; }

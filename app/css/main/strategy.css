@@ -1,0 +1,84 @@
+.strategy {
+  position: relative;
+  color: #fff; }
+  .strategy__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; }
+  .strategy__container {
+    z-index: 2;
+    padding-top: 7.4vw;
+    padding-bottom: 6vw; }
+  .strategy__title {
+    color: #fff;
+    width: 56vw;
+    margin: 0 auto;
+    line-height: 2.7vw;
+    text-align: center; }
+  .strategy__content {
+    padding-top: 10.8vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    @media screen and (max-width: 1023px) {
+      .strategy__content {
+        padding-top: 2.8vw; } }
+  .strategy__item {
+    width: 19.5vw;
+    padding-bottom: 6vw; }
+  .strategy__number {
+    font-size: 1.3vw;
+    padding-bottom: 0.5vw; }
+  .strategy__head {
+    padding-left: 1.1vw;
+    font-size: 3vw;
+    padding-bottom: 2.4vw; }
+  .strategy__text {
+    padding-left: 1.1vw;
+    line-height: 2.2vw; }
+  .strategy-more {
+    padding-top: 5.7vw;
+    width: 24.2vw;
+    margin: 0 auto; }
+    .strategy-more__title {
+      font-size: 1.3vw;
+      letter-spacing: 0.05vw;
+      padding-bottom: 3.6vw; }
+    .strategy-more__link {
+      width: 11.8vw;
+      margin: 0 auto;
+      height: 3.5vw;
+      -webkit-border-radius: 2vw;
+              border-radius: 2vw;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background-color: rgba(255, 255, 255, 0.33);
+      font-size: 1.1vw;
+      -webkit-transition: background-color 0.3s;
+      -o-transition: background-color 0.3s;
+      transition: background-color 0.3s; }
+      .strategy-more__link:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        -webkit-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        transition: background-color 0.3s; }

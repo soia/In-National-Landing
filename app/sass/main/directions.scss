@@ -1,0 +1,65 @@
+@import "../vars";
+
+.directions {
+  padding-top: 11.7vw;
+
+  &__container {
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    top: -5.5vw;
+    right: 5.7vw;
+    width: 44.1vw;
+    height: auto;
+  }
+
+  &__content {
+    width: 37vw;
+  }
+
+  &__title {
+    font-size: 3.3vw;
+  }
+
+  &__text {
+    padding-top: 3.7vw;
+    color: $main-brown;
+    line-height: 2.1vw;
+  }
+
+  &-links {
+    padding-top: 10.6vw;
+    display: flex;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30vw;
+
+      &:first-child {
+        width: 20vw;
+        margin-right: 7.2vw;
+      }
+    }
+
+    &__element {
+      margin-top: 1.8vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 9.3vw;
+      height: 2.8vw;
+      background-color: rgba(216, 216, 216, 0.41);
+      font-size: 1.1vw;
+      border-radius: 1.8vw;
+
+      &:hover {
+        background-color: rgba(205, 205, 205, 0.71);
+        transition: background-color 0.3s;
+      }
+    }
+  }
+}

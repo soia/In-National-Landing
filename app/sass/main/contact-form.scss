@@ -1,0 +1,92 @@
+.contact-form {
+  &__container {
+    padding-top: 11vw;
+  }
+
+  &__title {
+    text-align: center;
+    padding-bottom: 6.3vw;
+  }
+
+  &__form {
+    width: 55.5vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 10.8vw;
+  }
+
+  &-input, &-textarea {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      width: 46%;
+      padding-bottom: 1vw;
+    }
+
+    &__label {
+      font-size: 1.1vw;
+      color: #9B9B9B;
+      padding-bottom: 1vw;
+    }
+
+    &__element {
+      width: 100%;
+      border-radius: 1vw;
+      height: 4vw;
+      font-size: 1.7vw;
+      padding-left: 1vw;
+      background-color: #F6F6F6;
+    }
+
+    &__warning {
+      text-align: right;
+      padding-right: 1vw;
+      padding-top: 0.5vw;
+      color: red;
+      opacity: 0;
+      visibility: hidden;
+
+      @media screen and (max-width: 1024px) { 
+        font-size: 1vh;
+      }
+
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+
+  &-textarea {
+    &__container {
+      width: 100%;
+      padding-bottom: 5.9vw;
+    }
+
+    &__element {
+      border: none;
+      resize: none;
+      padding-top: 1vw;
+      height: 12vw;
+    }
+  }
+
+  &__btn {
+    background: linear-gradient(347.06deg, #6E2E77 -10.26%, #05002A 151.66%);
+    transition: background 0.3s;
+    border-radius: 2vw;
+    margin: 0 auto;
+    width: 13.8vw;
+    height: 4.1vw;
+    font-size: 1.3vw;
+
+    &:hover {
+      transition: background 0.3s;
+      background: linear-gradient(347.06deg, rgba(110,46,119,0.9) -10.26%, rgba(5, 0, 42, 0.9) 151.66%);
+    }
+  }
+}

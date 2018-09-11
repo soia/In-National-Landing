@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Gulp template</title>
+</head>
+
+<body>
+
+
+	<div class="page-modal modal js-sign-in-modal">
+		<div class="modal__bg js-modal-background">
+		</div>
+		<div class="modal__wrapper">
+			<form class="modal__container">
+				<div class="modal__btn-close js-modal-btn-close">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 21.9 21.9"
+					 enable-background="new 0 0 21.9 21.9">
+						<path d="M14.1,11.3c-0.2-0.2-0.2-0.5,0-0.7l7.5-7.5c0.2-0.2,0.3-0.5,0.3-0.7s-0.1-0.5-0.3-0.7l-1.4-1.4C20,0.1,19.7,0,19.5,0  c-0.3,0-0.5,0.1-0.7,0.3l-7.5,7.5c-0.2,0.2-0.5,0.2-0.7,0L3.1,0.3C2.9,0.1,2.6,0,2.4,0S1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.2,0,2.4  s0.1,0.5,0.3,0.7l7.5,7.5c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5C0.1,19,0,19.3,0,19.5s0.1,0.5,0.3,0.7l1.4,1.4c0.2,0.2,0.5,0.3,0.7,0.3  s0.5-0.1,0.7-0.3l7.5-7.5c0.2-0.2,0.5-0.2,0.7,0l7.5,7.5c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.4-1.4c0.2-0.2,0.3-0.5,0.3-0.7  s-0.1-0.5-0.3-0.7L14.1,11.3z"></path>
+					</svg>
+				</div>
+				<h2 class="modal__title">Sign in</h2>
+				<p class="modal__text">Sign up with your email and password</p>
+				<div class="modal__input main-input">
+					<label for="sign-in-login" class="main-input__label">Login</label>
+					<input type="text" class="main-input__input" id="sign-in-login" placeholder="JohnDoe">
+					<span class="main-input__warn is-active">Enter correct data</span>
+				</div>
+				<div class="modal__input main-input">
+					<label for="sign-in-password" class="main-input__label">Password</label>
+					<input type="password" class="main-input__input" id="sign-in-password" placeholder="*******">
+					<span class="main-input__warn">Enter correct data</span>
+				</div>
+				<button class="modal__submit-btn main-btn">Sign in</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="page-modal modal js-sign-up-modal">
+		<div class="modal__bg js-modal-background">
+		</div>
+		<div class="modal__wrapper">
+			<div class="modal__container">
+				<div class="modal__btn-close js-modal-btn-close">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 21.9 21.9"
+					 enable-background="new 0 0 21.9 21.9">
+						<path d="M14.1,11.3c-0.2-0.2-0.2-0.5,0-0.7l7.5-7.5c0.2-0.2,0.3-0.5,0.3-0.7s-0.1-0.5-0.3-0.7l-1.4-1.4C20,0.1,19.7,0,19.5,0  c-0.3,0-0.5,0.1-0.7,0.3l-7.5,7.5c-0.2,0.2-0.5,0.2-0.7,0L3.1,0.3C2.9,0.1,2.6,0,2.4,0S1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.2,0,2.4  s0.1,0.5,0.3,0.7l7.5,7.5c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5C0.1,19,0,19.3,0,19.5s0.1,0.5,0.3,0.7l1.4,1.4c0.2,0.2,0.5,0.3,0.7,0.3  s0.5-0.1,0.7-0.3l7.5-7.5c0.2-0.2,0.5-0.2,0.7,0l7.5,7.5c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.4-1.4c0.2-0.2,0.3-0.5,0.3-0.7  s-0.1-0.5-0.3-0.7L14.1,11.3z"></path>
+					</svg>
+				</div>
+				<h2 class="modal__title">Sign up</h2>
+				<p class="modal__text">Sign in with your email and password</p>
+				<div class="modal__input main-input">
+					<label for="sign-up-login" class="main-input__label">Login</label>
+					<input type="text" class="main-input__input" id="sign-up-login" placeholder="JohnDoe">
+					<span class="main-input__warn is-active">Enter correct data</span>
+				</div>
+				<div class="modal__input main-input">
+					<label for="sign-up-password" class="main-input__label">Password</label>
+					<input type="password" class="main-input__input" id="sign-up-password" placeholder="*******">
+					<span class="main-input__warn">Enter correct data</span>
+				</div>
+				<div class="modal__input main-input">
+					<label for="sign-up-email" class="main-input__label">Email</label>
+					<input type="email" class="main-input__input" id="sign-up-email" placeholder="johndoe@gmail.com">
+					<span class="main-input__warn">Enter correct data</span>
+				</div>
+				<div class="modal__input main-input">
+					<label for="sign-up-first-name" class="main-input__label">First name</label>
+					<input type="text" class="main-input__input" id="sign-up-first-name" placeholder="John">
+					<span class="main-input__warn">Enter correct data</span>
+				</div>
+				<div class="modal__input main-input">
+					<label for="sign-up-last-name" class="main-input__label">Last name</label>
+					<input type="text" class="main-input__input" id="sign-up-last-name" placeholder="Doe">
+					<span class="main-input__warn">Enter correct data</span>
+				</div>
+				<button class="modal__submit-btn main-btn">Sign in</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-modal modal js-sign-out-modal">
+		<div class="modal__bg js-modal-background">
+		</div>
+		<div class="modal__wrapper">
+			<div class="modal__container">
+				<div class="modal__btn-close js-modal-btn-close">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 21.9 21.9"
+					 enable-background="new 0 0 21.9 21.9">
+						<path d="M14.1,11.3c-0.2-0.2-0.2-0.5,0-0.7l7.5-7.5c0.2-0.2,0.3-0.5,0.3-0.7s-0.1-0.5-0.3-0.7l-1.4-1.4C20,0.1,19.7,0,19.5,0  c-0.3,0-0.5,0.1-0.7,0.3l-7.5,7.5c-0.2,0.2-0.5,0.2-0.7,0L3.1,0.3C2.9,0.1,2.6,0,2.4,0S1.9,0.1,1.7,0.3L0.3,1.7C0.1,1.9,0,2.2,0,2.4  s0.1,0.5,0.3,0.7l7.5,7.5c0.2,0.2,0.2,0.5,0,0.7l-7.5,7.5C0.1,19,0,19.3,0,19.5s0.1,0.5,0.3,0.7l1.4,1.4c0.2,0.2,0.5,0.3,0.7,0.3  s0.5-0.1,0.7-0.3l7.5-7.5c0.2-0.2,0.5-0.2,0.7,0l7.5,7.5c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3l1.4-1.4c0.2-0.2,0.3-0.5,0.3-0.7  s-0.1-0.5-0.3-0.7L14.1,11.3z"></path>
+					</svg>
+				</div>
+				<h2 class="modal__title">Sign out</h2>
+				<p class="modal__text">Do you realy want to exit?</p>
+				<div class="modal__multiple-btns">
+					<button class="modal__agree-btn main-btn js-sign-out-agree">Yes</button>
+					<button class="modal__disagree-btn main-btn">No</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-wrapper">
+		<header class="header">
+			<!-- Header Bar template: not autorized -->
+			<div class="header-bar header-bar_mobile main-container">
+				<div class="header-bar__logo header-logo">
+					<a class="header-logo__container" href="#">
+						<svg class="header-logo__img" viewBox="0 0 147 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="1-in" transform="translate(-153.000000, -70.000000)">
+									<g id="Group-3" transform="translate(153.000000, 70.000000)">
+										<g id="Group-2">
+											<path d="M1.01233379,9.80268516 L1.01233379,28.1583578 L16.2959993,37.0695448 L31.5796648,28.1583578 L31.5796648,9.80268516 L16.2959993,0.898280102 L1.01233379,9.80268516 Z"
+											 id="Rectangle" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<path d="M16.2959993,36.3172158 L16.2959993,28.0633031" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<ellipse id="Oval" fill="#FFFFFF" cx="16.1779123" cy="27.9453901" rx="1.53513037" ry="1.5328695"></ellipse>
+											<path d="M8.50226049,22.8751294 L8.50226049,14.6212167" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<ellipse id="Oval" fill="#FFFFFF" cx="8.38417354" cy="14.5033037" rx="1.53513037" ry="1.5328695"></ellipse>
+											<ellipse id="Oval" fill="#FFFFFF" cx="16.1779123" cy="19.2198252" rx="1.53513037" ry="1.5328695"></ellipse>
+											<g id="Group" transform="translate(16.177912, 6.367304) scale(1, -1) translate(-16.177912, -6.367304) translate(14.642782, 1.179130)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(23.971651, 19.809390) scale(1, -1) translate(-23.971651, -19.809390) translate(22.436521, 14.621217)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(5.313913, 25.469216) scale(1, -1) rotate(-240.000000) translate(-5.313913, -25.469216) translate(3.778782, 20.281043)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(27.278086, 12.970434) scale(-1, 1) rotate(-240.000000) translate(-27.278086, -12.970434) translate(25.742955, 7.782261)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+										</g>
+										<text id="In-National" font-family="FuturaPT-Book, Futura PT" font-size="24.1919989" font-weight="300" fill="#FFFFFF">
+											<tspan x="42.3359981" y="26.6879999">In National</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</a>
+
+				</div>
+				<button class="hamburger hamburger--spin js-mobile-nav-1" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
+			<div class="header-bar header-bar_main main-container js-mobile-nav-content-1">
+				<div class="header-bar__logo header-logo">
+					<a class="header-logo__container" href="#">
+						<svg class="header-logo__img" viewBox="0 0 147 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="1-in" transform="translate(-153.000000, -70.000000)">
+									<g id="Group-3" transform="translate(153.000000, 70.000000)">
+										<g id="Group-2">
+											<path d="M1.01233379,9.80268516 L1.01233379,28.1583578 L16.2959993,37.0695448 L31.5796648,28.1583578 L31.5796648,9.80268516 L16.2959993,0.898280102 L1.01233379,9.80268516 Z"
+											 id="Rectangle" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<path d="M16.2959993,36.3172158 L16.2959993,28.0633031" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<ellipse id="Oval" fill="#FFFFFF" cx="16.1779123" cy="27.9453901" rx="1.53513037" ry="1.5328695"></ellipse>
+											<path d="M8.50226049,22.8751294 L8.50226049,14.6212167" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<ellipse id="Oval" fill="#FFFFFF" cx="8.38417354" cy="14.5033037" rx="1.53513037" ry="1.5328695"></ellipse>
+											<ellipse id="Oval" fill="#FFFFFF" cx="16.1779123" cy="19.2198252" rx="1.53513037" ry="1.5328695"></ellipse>
+											<g id="Group" transform="translate(16.177912, 6.367304) scale(1, -1) translate(-16.177912, -6.367304) translate(14.642782, 1.179130)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(23.971651, 19.809390) scale(1, -1) translate(-23.971651, -19.809390) translate(22.436521, 14.621217)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(5.313913, 25.469216) scale(1, -1) rotate(-240.000000) translate(-5.313913, -25.469216) translate(3.778782, 20.281043)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(27.278086, 12.970434) scale(-1, 1) rotate(-240.000000) translate(-27.278086, -12.970434) translate(25.742955, 7.782261)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+										</g>
+										<text id="In-National" font-family="FuturaPT-Book, Futura PT" font-size="24.1919989" font-weight="300" fill="#FFFFFF">
+											<tspan x="42.3359981" y="26.6879999">In National</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<!-- /.header-bar__logo -->
+				<!--<nav class="header-bar__nav header-nav">-->
+				<!--<ul class="header-nav__container">-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--</ul>-->
+				<!--</nav>-->
+				<!-- /.header-bar__nav -->
+				<div class="header-bar__cabinet header-cabinet">
+					<div class="header-cabinet__container">
+						<div class="header__sign-in">
+							<button class="main-btn header-cabinet__btn js-modal-trigger" data-modal="js-sign-in-modal">Вход</button>
+						</div>
+						<div class="header__sign-up">
+							<button class="main-btn header-cabinet__btn js-modal-trigger" data-modal="js-sign-up-modal">Регистрация</button>
+						</div>
+					</div>
+				</div>
+				<!-- /.header-cabinet -->
+			</div>
+			<!-- /Header Bar -->
+			<!-- Header Bar template: autorized user -->
+			<div class="header-bar header-bar_mobile main-container" style="display: none">
+				<div class="header-bar__logo header-logo">
+					<a class="header-logo__container" href="#">
+						<svg class="header-logo__img" viewBox="0 0 147 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="1-in" transform="translate(-153.000000, -70.000000)">
+									<g id="Group-3" transform="translate(153.000000, 70.000000)">
+										<g id="Group-2">
+											<path d="M1.01233379,9.80268516 L1.01233379,28.1583578 L16.2959993,37.0695448 L31.5796648,28.1583578 L31.5796648,9.80268516 L16.2959993,0.898280102 L1.01233379,9.80268516 Z"
+											 id="Rectangle" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<path d="M16.2959993,36.3172158 L16.2959993,28.0633031" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<ellipse id="Oval" fill="#FFFFFF" cx="16.1779123" cy="27.9453901" rx="1.53513037" ry="1.5328695"></ellipse>
+											<path d="M8.50226049,22.8751294 L8.50226049,14.6212167" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<ellipse id="Oval" fill="#FFFFFF" cx="8.38417354" cy="14.5033037" rx="1.53513037" ry="1.5328695"></ellipse>
+											<ellipse id="Oval" fill="#FFFFFF" cx="16.1779123" cy="19.2198252" rx="1.53513037" ry="1.5328695"></ellipse>
+											<g id="Group" transform="translate(16.177912, 6.367304) scale(1, -1) translate(-16.177912, -6.367304) translate(14.642782, 1.179130)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(23.971651, 19.809390) scale(1, -1) translate(-23.971651, -19.809390) translate(22.436521, 14.621217)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(5.313913, 25.469216) scale(1, -1) rotate(-240.000000) translate(-5.313913, -25.469216) translate(3.778782, 20.281043)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(27.278086, 12.970434) scale(-1, 1) rotate(-240.000000) translate(-27.278086, -12.970434) translate(25.742955, 7.782261)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+										</g>
+										<text id="In-National" font-family="FuturaPT-Book, Futura PT" font-size="24.1919989" font-weight="300" fill="#FFFFFF">
+											<tspan x="42.3359981" y="26.6879999">In National</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<button class="hamburger hamburger--spin js-mobile-nav-2" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
+			<div class="header-bar header-bar_main main-container js-mobile-nav-content-2" style="display: none">
+				<div class="header-bar__logo header-logo">
+					<a class="header-logo__container" href="#">
+						<svg class="header-logo__img" viewBox="0 0 147 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="1-in" transform="translate(-153.000000, -70.000000)">
+									<g id="Group-3" transform="translate(153.000000, 70.000000)">
+										<g id="Group-2">
+											<path d="M1.01233379,9.80268516 L1.01233379,28.1583578 L16.2959993,37.0695448 L31.5796648,28.1583578 L31.5796648,9.80268516 L16.2959993,0.898280102 L1.01233379,9.80268516 Z"
+											 id="Rectangle" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<path d="M16.2959993,36.3172158 L16.2959993,28.0633031" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<ellipse id="Oval" fill="#FFFFFF" cx="16.1779123" cy="27.9453901" rx="1.53513037" ry="1.5328695"></ellipse>
+											<path d="M8.50226049,22.8751294 L8.50226049,14.6212167" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+											<ellipse id="Oval" fill="#FFFFFF" cx="8.38417354" cy="14.5033037" rx="1.53513037" ry="1.5328695"></ellipse>
+											<ellipse id="Oval" fill="#FFFFFF" cx="16.1779123" cy="19.2198252" rx="1.53513037" ry="1.5328695"></ellipse>
+											<g id="Group" transform="translate(16.177912, 6.367304) scale(1, -1) translate(-16.177912, -6.367304) translate(14.642782, 1.179130)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(23.971651, 19.809390) scale(1, -1) translate(-23.971651, -19.809390) translate(22.436521, 14.621217)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(5.313913, 25.469216) scale(1, -1) rotate(-240.000000) translate(-5.313913, -25.469216) translate(3.778782, 20.281043)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+											<g id="Group" transform="translate(27.278086, 12.970434) scale(-1, 1) rotate(-240.000000) translate(-27.278086, -12.970434) translate(25.742955, 7.782261)">
+												<path d="M1.53513037,9.87095184 L1.53513037,1.60167739" id="Path-2" stroke="#FFFFFF" stroke-width="1.55231977"></path>
+												<ellipse id="Oval" fill="#FFFFFF" cx="1.53513037" cy="1.5564521" rx="1.53513037" ry="1.5564521"></ellipse>
+											</g>
+										</g>
+										<text id="In-National" font-family="FuturaPT-Book, Futura PT" font-size="24.1919989" font-weight="300" fill="#FFFFFF">
+											<tspan x="42.3359981" y="26.6879999">In National</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</a>
+				</div>
+				<!-- /.header-bar__logo -->
+				<!--<nav class="header-bar__nav header-nav">-->
+				<!--<ul class="header-nav__container">-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--<li class="header-nav__item"><a class="header-nav__link" href="#">Link</a></li>-->
+				<!--</ul>-->
+				<!--</nav>-->
+				<!-- /.header-bar__nav -->
+				<div class="header-bar__cabinet header-cabinet">
+					<div class="header-cabinet__container">
+						<div class="header-cabinet__notify header-notify js-dropdown-container">
+							<div class="header-notify__btn js-dropdown-trigger">
+								<div class="header-notify__check"></div>
+								<svg class="header-notify__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+								 id="Capa_1" x="0px" y="0px" viewBox="0 0 611.999 611.999" style="enable-background:new 0 0 611.999 611.999;" xml:space="preserve">
+									<g>
+										<g>
+											<g>
+												<path d="M570.107,500.254c-65.037-29.371-67.511-155.441-67.559-158.622v-84.578c0-81.402-49.742-151.399-120.427-181.203     C381.969,34,347.883,0,306.001,0c-41.883,0-75.968,34.002-76.121,75.849c-70.682,29.804-120.425,99.801-120.425,181.203v84.578     c-0.046,3.181-2.522,129.251-67.561,158.622c-7.409,3.347-11.481,11.412-9.768,19.36c1.711,7.949,8.74,13.626,16.871,13.626     h164.88c3.38,18.594,12.172,35.892,25.619,49.903c17.86,18.608,41.479,28.856,66.502,28.856     c25.025,0,48.644-10.248,66.502-28.856c13.449-14.012,22.241-31.311,25.619-49.903h164.88c8.131,0,15.159-5.676,16.872-13.626     C581.586,511.664,577.516,503.6,570.107,500.254z M484.434,439.859c6.837,20.728,16.518,41.544,30.246,58.866H97.32     c13.726-17.32,23.407-38.135,30.244-58.866H484.434z M306.001,34.515c18.945,0,34.963,12.73,39.975,30.082     c-12.912-2.678-26.282-4.09-39.975-4.09s-27.063,1.411-39.975,4.09C271.039,47.246,287.057,34.515,306.001,34.515z      M143.97,341.736v-84.685c0-89.343,72.686-162.029,162.031-162.029s162.031,72.686,162.031,162.029v84.826     c0.023,2.596,0.427,29.879,7.303,63.465H136.663C143.543,371.724,143.949,344.393,143.97,341.736z M306.001,577.485     c-26.341,0-49.33-18.992-56.709-44.246h113.416C355.329,558.493,332.344,577.485,306.001,577.485z"
+												/>
+												<path d="M306.001,119.235c-74.25,0-134.657,60.405-134.657,134.654c0,9.531,7.727,17.258,17.258,17.258     c9.531,0,17.258-7.727,17.258-17.258c0-55.217,44.923-100.139,100.142-100.139c9.531,0,17.258-7.727,17.258-17.258     C323.259,126.96,315.532,119.235,306.001,119.235z"
+												/>
+											</g>
+										</g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+									<g>
+									</g>
+								</svg>
+							</div>
+							<ul class="header-notify__list js-dropdown-content">
+								<li class="header-notify__item">Some notification</li>
+							</ul>
+						</div>
+						<div class="header-cabinet__user header-user js-dropdown-container">
+							<button class="header-user__btn js-dropdown-trigger">John Doe</button>
+							<ul class="header-user__list js-dropdown-content">
+								<li class="header-user__item">Some notification</li>
+								<li class="header-user__item">
+									<button class="header-user__button main-btn js-modal-trig" data-usage="sign-out" data-modal="js-sign-out-modal">Sign
+										out</button>
+								</li>
+							</ul>
+						</div>
+						<div class="header-cabinet__user-logo header-user-logo">
+							<a href="#" class="header-user-logo__btn">
+								<span>JD</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.header-cabinet -->
+			</div>
+			<!-- /Header Bar -->
+			<div class="header-content main-container">
+				<h1 class="header-content__title">In National</h1>
+				<h3 class="header-content__subtitle">Инвестиционный фонд для свободных и успешных людей!</h3>
+				<p class="header-content__text">
+					Основная задача фонда - создание инструмента для заработка инвесторов путем диверсификации их активов и предоставления им
+					лучших инструментов для заработка.
+				</p>
+				<button class="main-btn header-content__btn js-modal-trigger" data-modal="js-sign-up-modal">Регистрация</button>
+			</div>
+			<!-- /.header-content -->
+		</header>
+		<main class="page-main">
+			<section class="main-section directions" id="directions">
+				<div class="directions__container section-container main-container">
+					<div class="directions__content">
+						<h2 class="main-title directions__title">Направления инвестирования</h2>
+						<p class="main-text directions__text">
+							Для достижения своих целей Фонд выбрал два основных направления для инвестирования, которые позволят диверсифицировать инвестиционные
+							риски и выплатить инвесторам достойные инвестиции:
+						</p>
+					</div>
+					<div class="directions-links">
+						<div class="directions-links__item">
+							<span class="directions-links__lable main-text">Инвестирование в недвижимость в Доминикане</span>
+							<a href="#" class="directions-links__element">Скачать PDF</a>
+						</div>
+						<div class="directions-links__item">
+							<span class="directions-links__lable main-text">Инвестирование в инновационный проект по развитию квантовых технологий,
+								путем покупки токенов</span>
+							<a href="#" class="directions-links__element">Скачать PDF</a>
+						</div>
+					</div>
+					<img class="directions__bg" src="img/directions-bg.png" alt="bg">
+				</div>
+			</section>
+			<section class="main-section requirements" id="requirements">
+				<div class="requirements__container section-container main-container">
+					<h2 class="requirements__title main-title">Условия инвестирования в Фонд</h2>
+					<div class="requirements__content">
+						<svg class="requirements__bg_3  requirements__bg" viewBox="0 0 902 1360" version="1.1" xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0592730978">
+								<g id="1-in" transform="translate(-538.000000, -1823.000000)" fill="#FFFFFF">
+									<path d="M1093.70463,1828.09673 L566.96795,2564.71598 C524.599106,2623.96703 530.921412,2705.09249 581.958121,2757.06423 L956.137451,3138.09876 C984.485248,3166.9659 1023.29219,3183.1575 1063.75061,3182.99869 L1765.03485,3180.24601 L1825,1818 L1093.70463,1828.09673 Z"
+									 id="Path-3"></path>
+								</g>
+							</g>
+						</svg>
+						<svg class="requirements__bg_2  requirements__bg" viewBox="0 0 1042 1362" version="1.1" xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0592730978">
+								<g id="1-in" transform="translate(-398.000000, -1819.000000)" fill="#FFFFFF">
+									<path d="M953.704634,1826.09673 L426.96795,2562.71598 C384.599106,2621.96703 390.921412,2703.09249 441.958121,2755.06423 L816.137451,3136.09876 C844.485248,3164.9659 883.292186,3181.1575 923.750614,3180.99869 L1625.03485,3178.24601 L1685,1816 L953.704634,1826.09673 Z"
+									 id="Path-3"></path>
+								</g>
+							</g>
+						</svg>
+						<svg class="requirements__bg_1  requirements__bg" viewBox="0 0 1166 1364" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.0592730978">
+								<g id="1-in" transform="translate(-274.000000, -1817.000000)" fill="#FFFFFF">
+									<path d="M829.704634,1826.09673 L302.96795,2562.71598 C260.599106,2621.96703 266.921412,2703.09249 317.958121,2755.06423 L692.137451,3136.09876 C720.485248,3164.9659 759.292186,3181.1575 799.750614,3180.99869 L1501.03485,3178.24601 L1561,1816 L829.704634,1826.09673 Z"
+									 id="Path-3"></path>
+								</g>
+							</g>
+						</svg>
+						<div class="requirements__item requirements-item">
+							<h4 class="requirements-item__title">Silver</h4>
+							<p class="requirements-item__subtitle">от 50$ до 999$</p>
+							<p class="requirements-item__plus">+</p>
+							<p class="requirements-item__text main-text">
+								Инвестор получает на сумму инвестиции акции компании 1 акция = 10$.
+							</p>
+							<button class="requirements-item__btn main-btn">Подробнее</button>
+						</div>
+						<div class="requirements__item requirements-item">
+							<h4 class="requirements-item__title">Gold</h4>
+							<p class="requirements-item__subtitle">от 1000$ до 4999$</p>
+							<p class="requirements-item__plus">+</p>
+							<p class="requirements-item__text main-text">
+								Инвестор получает на сумму инвестиции акции компании 1 акция = 8$.
+							</p>
+							<button class="requirements-item__btn main-btn">Подробнее</button>
+						</div>
+						<div class="requirements__item requirements-item">
+							<h4 class="requirements-item__title">Platinum</h4>
+							<p class="requirements-item__subtitle">от 5000$ до 10000$</p>
+							<p class="requirements-item__plus">+</p>
+							<p class="requirements-item__text main-text">
+								Инвестор получает на сумму инвестиции акции компании 1 акция = 6$.
+							</p>
+							<button class="requirements-item__btn main-btn">Подробнее</button>
+						</div>
+						<div class="requirements__item requirements-item">
+							<h4 class="requirements-item__title requirements-item__title_lg">Diamond</h4>
+							<p class="requirements-item__subtitle">до 10 000$</p>
+							<p class="requirements-item__text main-text">
+								Все инвестиции идут на покупку акций компании по курсу 1 акция = 5$
+							</p>
+							<p class="requirements-item__subtitle">+ 10 000$</p>
+							<p class="requirements-item__text main-text">
+								Сумма свыше идет на покупку акций фонда по курсу 1 акция – 4$. Как для оптового инвестора
+							</p>
+							<button class="requirements-item__btn main-btn">Подробнее</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-section strategy" id="strategy">
+				<svg class="strategy__bg" viewBox="0 0 1440 1301" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+					<desc>Created with Sketch.</desc>
+					<defs>
+						<linearGradient x1="84.3771115%" y1="129.818246%" x2="0%" y2="-15.3651214%" id="linearGradient-1">
+							<stop stop-color="#6E2E77" offset="0%"></stop>
+							<stop stop-color="#05002A" offset="100%"></stop>
+						</linearGradient>
+					</defs>
+					<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						<g id="1-in" transform="translate(0.000000, -3327.000000)" fill="url(#linearGradient-1)">
+							<path d="M0,3509.7095 L694.988763,3330.17814 C711.393663,3325.94038 728.606337,3325.94038 745.011237,3330.17814 L1440,3509.7095 L1440,4628 L0,4628 L0,3509.7095 Z"
+							 id="Rectangle-12" transform="translate(720.000000, 3977.500000) rotate(-180.000000) translate(-720.000000, -3977.500000) "></path>
+						</g>
+					</g>
+				</svg>
+				<div class="strategy__container main-container">
+					<h2 class="strategy__title main-title">
+						Маркетинг-план Фонда предусматривает несколько видов пассивного и активного заработка:
+					</h2>
+					<div class="strategy__content">
+						<div class="strategy__item">
+							<span class="strategy__number">1</span>
+							<h4 class="strategy__head">Активный</h4>
+							<p class="strategy__text main-text">Активный доход с 10-ти уровневой реферальной программы</p>
+						</div>
+						<div class="strategy__item">
+							<span class="strategy__number">2</span>
+							<h4 class="strategy__head">Пассивный</h4>
+							<p class="strategy__text main-text">Пассивный доход с глубинного бонуса</p>
+						</div>
+						<div class="strategy__item">
+							<span class="strategy__number">3</span>
+							<h4 class="strategy__head">Пассивный</h4>
+							<p class="strategy__text main-text">Пассивный доход с социальных программ</p>
+						</div>
+						<div class="strategy__item">
+							<span class="strategy__number">4</span>
+							<h4 class="strategy__head">Пассивный</h4>
+							<p class="strategy__text main-text">Пассивный доход путем получения дивидендов от строительства недвижимости</p>
+						</div>
+						<div class="strategy__item">
+							<span class="strategy__number">5</span>
+							<h4 class="strategy__head">Пассивный</h4>
+							<p class="strategy__text main-text">Пассивный доход от роста токена проекта Revival
+							</p>
+						</div>
+						<div class="strategy__item">
+							<span class="strategy__number">6</span>
+							<h4 class="strategy__head">Пассивный</h4>
+							<p class="strategy__text main-text">Пассивный доход от баунти программы проекта Revival, путем увеличения активов
+								Фонда в токенах</p>
+						</div>
+						<div class="strategy__item">
+							<span class="strategy__number">7</span>
+							<h4 class="strategy__head">Пассивный</h4>
+							<p class="strategy__text main-text">Пассивный доход от дивидендов</p>
+						</div>
+					</div>
+					<div class="strategy__more strategy-more">
+						<p class="strategy-more__title">Более детально о маркетинг-плане</p>
+						<a href="#" class="strategy-more__link">Скачать PDF</a>
+					</div>
+				</div>
+			</section>
+			<section class="main-section contact-form" id="contact-form">
+				<div class="contact-form__container main-container">
+					<h2 class="contact-form__title main-title">Остались вопросы</h2>
+					<form class="contact-form__form">
+						<div class="contact-form-input contact-form-input__container">
+							<span class="contact-form-input__label">* Имя</span>
+							<input name="user-name" type="text" class="contact-form-input__element" />
+							<span class="contact-form-input__warning active">Заполните поле</span>
+						</div>
+						<div class="contact-form-input contact-form-input__container">
+							<span class="contact-form-input__label">* E-mail</span>
+							<input name="user-email" type="email" class="contact-form-input__element" />
+							<span class="contact-form-input__warning">Заполните поле</span>
+						</div>
+						<div class="contact-form-textarea contact-form-textarea__container">
+							<span class="contact-form-textarea__label">* Вопрос</span>
+							<textarea name="user-email" class="contact-form-textarea__element"></textarea>
+							<span class="contact-form-textarea__warning">Заполните поле</span>
+						</div>
+						<button class="contact-form__btn main-btn">Отправить</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="page-footer footer">
+			<a href="#" class="footer__logo footer-logo">
+				<svg class="footer-logo__img" width="149" height="39" viewBox="0 0 149 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.296 36.3171V28.0632" stroke="white" stroke-width="1.55232" />
+					<path d="M24.2131 23.7281L18.4902 20.4239L7.67038 14.1771" stroke="white" stroke-width="1.55232" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M16.1779 29.4783C17.0258 29.4783 17.7131 28.792 17.7131 27.9455C17.7131 27.0989 17.0258 26.4126 16.1779 26.4126C15.3301 26.4126 14.6428 27.0989 14.6428 27.9455C14.6428 28.792 15.3301 29.4783 16.1779 29.4783Z"
+					 fill="white" />
+					<path d="M8.50226 22.8753V14.6213" stroke="white" stroke-width="1.55232" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M8.38416 16.0362C9.23199 16.0362 9.91929 15.3499 9.91929 14.5033C9.91929 13.6567 9.23199 12.9705 8.38416 12.9705C7.53633 12.9705 6.84903 13.6567 6.84903 14.5033C6.84903 15.3499 7.53633 16.0362 8.38416 16.0362Z"
+					 fill="white" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M16.1779 20.7528C17.0258 20.7528 17.7131 20.0665 17.7131 19.2199C17.7131 18.3733 17.0258 17.687 16.1779 17.687C15.3301 17.687 14.6428 18.3733 14.6428 19.2199C14.6428 20.0665 15.3301 20.7528 16.1779 20.7528Z"
+					 fill="white" />
+					<path d="M16.1779 1.68458V9.95386" stroke="white" stroke-width="1.55232" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M16.1779 8.44252C17.0258 8.44252 17.7131 9.13936 17.7131 9.99897C17.7131 10.8586 17.0258 11.5554 16.1779 11.5554C15.3301 11.5554 14.6428 10.8586 14.6428 9.99897C14.6428 9.13936 15.3301 8.44252 16.1779 8.44252Z"
+					 fill="white" />
+					<path d="M23.9716 15.1267V23.396" stroke="white" stroke-width="1.55232" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M23.9717 21.8847C24.8195 21.8847 25.5068 22.5815 25.5068 23.4411C25.5068 24.3007 24.8195 24.9976 23.9717 24.9976C23.1238 24.9976 22.4365 24.3007 22.4365 23.4411C22.4365 22.5815 23.1238 21.8847 23.9717 21.8847Z"
+					 fill="white" />
+					<path d="M1.25849 27.8106L8.4199 23.676" stroke="white" stroke-width="1.55232" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M7.11114 24.4316C6.68722 23.6973 6.94706 22.7537 7.6915 22.3239C8.43594 21.8941 9.38307 22.1409 9.80699 22.8751C10.2309 23.6094 9.97107 24.553 9.22663 24.9828C8.48219 25.4126 7.53505 25.1658 7.11114 24.4316Z"
+					 fill="white" />
+					<path d="M31.3335 10.6291L24.1721 14.7637" stroke="white" stroke-width="1.55232" />
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M25.4808 14.0081C25.9048 14.7424 25.6449 15.686 24.9005 16.1158C24.156 16.5456 23.2089 16.2988 22.785 15.5646C22.3611 14.8303 22.6209 13.8867 23.3654 13.4569C24.1098 13.0271 25.0569 13.2739 25.4808 14.0081Z"
+					 fill="white" />
+					<path d="M44.4165 10.5519V26.688H46.2067V10.5519H44.4165ZM49.9346 26.688H51.6764V21.4383C51.6764 20.7126 51.7248 19.5272 52.4021 18.7288C52.9102 18.124 53.5634 17.9547 54.1682 17.9547C54.9423 17.9547 55.4745 18.245 55.8132 18.6804C56.2245 19.2127 56.2729 19.9142 56.2729 20.519V26.688H58.0147V20.4706C58.0147 19.3578 57.9421 18.5353 57.4341 17.7853C56.8293 16.8902 55.7406 16.4064 54.5552 16.4064C52.886 16.4064 51.9909 17.3983 51.6764 17.8095V16.6483H49.9346V26.688ZM69.1702 26.688V14.2291L81.7501 27.4137V10.5519H79.9598V23.0592L67.38 9.87455V26.688H69.1702ZM93.1596 18.0756C92.7 17.4708 91.6597 16.4064 89.7243 16.4064C87.16 16.4064 84.8376 18.1966 84.8376 21.6561C84.8376 25.1881 87.1842 26.9783 89.7243 26.9783C91.4904 26.9783 92.579 26.0348 93.1596 25.2849V26.688H94.9014V16.6483H93.1596V18.0756ZM89.9179 17.9547C91.4662 17.9547 93.2564 19.0917 93.2564 21.6802C93.2564 23.664 92.0468 25.43 89.9179 25.43C87.8374 25.43 86.6278 23.8091 86.6278 21.6561C86.6278 19.2127 88.2002 17.9547 89.9179 17.9547ZM101.732 18.245V16.6483H99.9906V13.0195H98.2488V16.6483H97.1844V18.245H98.2488V26.688H99.9906V18.245H101.732ZM103.374 16.6483V26.688H105.116V16.6483H103.374ZM103.011 12.8502C103.011 13.5275 103.568 14.084 104.245 14.084C104.923 14.084 105.479 13.5275 105.479 12.8502C105.479 12.1728 104.923 11.6164 104.245 11.6164C103.568 11.6164 103.011 12.1728 103.011 12.8502ZM113.1 26.9783C116.148 26.9783 118.422 24.7526 118.422 21.7044C118.422 18.6562 116.172 16.4064 113.1 16.4064C110.027 16.4064 107.777 18.6562 107.777 21.7044C107.777 24.7526 110.051 26.9783 113.1 26.9783ZM113.1 17.9547C114.938 17.9547 116.632 19.2369 116.632 21.7044C116.632 24.1478 114.914 25.43 113.1 25.43C111.309 25.43 109.568 24.172 109.568 21.7044C109.568 19.261 111.261 17.9547 113.1 17.9547ZM121.093 26.688H122.835V21.4383C122.835 20.7126 122.883 19.5272 123.561 18.7288C124.069 18.124 124.722 17.9547 125.327 17.9547C126.101 17.9547 126.633 18.245 126.972 18.6804C127.383 19.2127 127.431 19.9142 127.431 20.519V26.688H129.173V20.4706C129.173 19.3578 129.101 18.5353 128.593 17.7853C127.988 16.8902 126.899 16.4064 125.714 16.4064C124.044 16.4064 123.149 17.3983 122.835 17.8095V16.6483H121.093V26.688ZM140.15 18.0756C139.69 17.4708 138.65 16.4064 136.714 16.4064C134.15 16.4064 131.828 18.1966 131.828 21.6561C131.828 25.1881 134.174 26.9783 136.714 26.9783C138.48 26.9783 139.569 26.0348 140.15 25.2849V26.688H141.892V16.6483H140.15V18.0756ZM136.908 17.9547C138.456 17.9547 140.247 19.0917 140.247 21.6802C140.247 23.664 139.037 25.43 136.908 25.43C134.827 25.43 133.618 23.8091 133.618 21.6561C133.618 19.2127 135.19 17.9547 136.908 17.9547ZM145.191 9.05202V26.688H146.932V9.05202H145.191Z"
+					 fill="white" />
+				</svg>
+
+			</a>
+		</footer>
+	</div>
+
+
+
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/customDropdown.js"></script>
+<script type="text/javascript" src="js/mobileNav.js"></script>
+<script type="text/javascript" src="js/customModal.js"></script>
+<script type="text/javascript" src="js/signOut.js"></script>
+
+</html>

@@ -1,0 +1,13 @@
+.footer {
+  background-color: #4A4A4A;
+  text-align: center;
+  padding: 2vw 0;
+
+
+  &-logo {
+    &__img {
+      width: 10vw;
+      height: auto;
+    }
+  }
+}

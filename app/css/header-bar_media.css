@@ -1,0 +1,84 @@
+@media screen and (max-width: 768px) {
+  html {
+    min-width: 100vw;
+    font-size: 5vw; }
+  .main-btn {
+    width: 55vw;
+    height: 15vw; }
+  .header-bar {
+    padding: 4vw 5vw; }
+    .header-bar_main {
+      z-index: 2;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 30%;
+      bottom: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding: 10vw 5vw;
+      border-right: 0.2vw solid red;
+      -webkit-transform: translateX(-100%);
+          -ms-transform: translateX(-100%);
+              transform: translateX(-100%);
+      opacity: 0;
+      -webkit-transition: all 0.7s;
+      -o-transition: all 0.7s;
+      transition: all 0.7s; }
+      .header-bar_main.visible {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0); }
+    .header-bar_mobile {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+  .header-logo__container {
+    width: 10vw;
+    height: 6vw; }
+  .header-nav {
+    position: static;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    padding: 10vw 2vw; }
+    .header-nav__container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .header-nav__item {
+      padding-right: 0;
+      padding-bottom: 3vw; }
+  .header-cabinet {
+    width: 100%; }
+    .header-cabinet__container {
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+  .header__sign-in {
+    padding-right: 0;
+    padding-bottom: 5vw; }
+  .header-notify {
+    width: 6.5vw;
+    height: 6.5vw; }
+  .header-user-logo__btn {
+    width: 12.5vw;
+    height: 12.5vw; } }
