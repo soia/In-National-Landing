@@ -71,8 +71,7 @@
   .requirements-item:nth-child(6) {
     background: -webkit-linear-gradient(138.16deg, #0900FF -37.41%, #EF0B6F 102.38%);
     background: -o-linear-gradient(138.16deg, #0900FF -37.41%, #EF0B6F 102.38%);
-    background: linear-gradient(311.84deg, #0900FF -37.41%, #EF0B6F 102.38%);
-    z-index: 10; }
+    background: linear-gradient(311.84deg, #0900FF -37.41%, #EF0B6F 102.38%); }
   .requirements-item:nth-child(7) {
     background: -webkit-linear-gradient(147.93deg, #0B009D -30.1%, #7C00D2 98.02%);
     background: -o-linear-gradient(147.93deg, #0B009D -30.1%, #7C00D2 98.02%);
