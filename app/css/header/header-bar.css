@@ -29,8 +29,9 @@
       -webkit-animation: logoStartAnimation 0.8s 1 0s linear;
               animation: logoStartAnimation 0.8s 1 0s linear; }
     .header-logo__img {
-      width: 18vw;
-      height: auto; }
+      display: block;
+      width: 100%;
+      height: 100%; }
 
 @-webkit-keyframes logoStartAnimation {
   0% {
