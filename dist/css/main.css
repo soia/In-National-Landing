@@ -374,7 +374,7 @@ input, select {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     min-width: 35vw;
-    max-height: 80vh;
+    max-height: 100%;
     overflow-y: scroll; }
   .modal__container {
     padding: 3vw;
@@ -1336,7 +1336,7 @@ input, select {
 @media screen and (max-width: 768px) {
   .modal__wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     max-height: initial; }
   .modal__container {
     width: 100%;
