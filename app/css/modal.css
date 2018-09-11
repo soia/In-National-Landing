@@ -100,7 +100,11 @@
     -o-transition: background 0.3s;
     transition: background 0.3s;
     -webkit-border-radius: 2vw;
-            border-radius: 2vw; }
+            border-radius: 2vw;
+    width: 20vw !important;
+    height: 6vw !important;
+    font-size: 2vh !important;
+    margin-bottom: 20px; }
     .modal__submit-btn:hover {
       -webkit-transition: background 0.3s;
       -o-transition: background 0.3s;

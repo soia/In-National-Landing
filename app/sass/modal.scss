@@ -108,6 +108,10 @@
     background: linear-gradient(347.06deg, #6E2E77 -10.26%, #05002A 151.66%);
     transition: background 0.3s;
     border-radius: 2vw;
+    width: 20vw !important;
+    height: 6vw !important;
+    font-size: 2vh !important;
+    margin-bottom: 20px;
 
     &:hover {
       transition: background 0.3s;
